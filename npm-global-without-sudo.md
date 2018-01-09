@@ -2,7 +2,7 @@
 
 I hope @sindresorhus won't mind that I forked this guide from him, I like to do things a little differently on my linux box.
 
-# Install `npm` packages globally without sudo on macOS and Linux
+# Install `npm` packages globally without sudo on Linux
 
 `npm` installs packages locally within your projects by default. You can also install packages globally (e.g. `npm install -g <package>`) (useful for command-line apps). However the downside of this is that you need to be root (or use `sudo`) to be able to install globally.
 
@@ -26,6 +26,7 @@ echo prefix=$HOME/.npm-packages >> ~/.npmrc
 NPM_PACKAGES=$HOME/.npm-packages
 
 PATH=$PATH:$NPM_PACKAGES/bin
+```
 ---
 
 Check out [`npm-g_nosudo`](https://github.com/glenpike/npm-g_nosudo) for doing the above steps automagically
