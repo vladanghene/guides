@@ -1,20 +1,15 @@
 # Guides
 
-> A collection of succinct guides
+> A collection of succinct guides (that I modified for my usage, hope that's okay. I also removed some of the originals - which I don't use - and will add my own over time).
 
 
 ## Collection
 
-- [Set environment variables](set-environment-variables.md)
-- [How not to `rm` yourself](how-not-to-rm-yourself.md)
-- [Install npm packages globally without sudo](npm-global-without-sudo.md) *(macOS & Linux)*
-- [Run a Node.js server alongside Apache](run-node-server-alongside-apache.md) *(Linux)*
-- [Launch app on startup](launch-app-on-startup-macos.md) *(macOS)*
-- [Use npm through a corporate proxy](npm-proxy.md) *(macOS & Linux)*
-- [Run Docker commands without sudo](docker-without-sudo.md) *(Linux)*
+- [Install npm packages globally without sudo](npm-global-without-sudo.md) *(Linux Fedora)*
+- [Run Docker commands without sudo](docker-without-sudo.md) *(Linux Fedora)*
 
 
-## Authors
+## Thanks to these original authors
 
 [Sindre Sorhus](http://sindresorhus.com),
 [Frederick Ros](https://github.com/sleeper),
@@ -24,13 +19,10 @@
 You?
 
 
-## Contribute
-
-I'm happy to accept requests in the issue tracker, improvements to the content, and additional guides.
-
-
 ## License
 
 [![CC0](http://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
 
-To the extent possible under law, [Sindre Sorhus](http://sindresorhus.com) has waived all copyright and related or neighboring rights to this work. This work is published from: Norway.
+To the extent possible under law, I and [Sindre Sorhus](http://sindresorhus.com) have waived all copyright and related or neighboring rights to this work. 
+
+Enjoy and fork and whatever. Cheers
