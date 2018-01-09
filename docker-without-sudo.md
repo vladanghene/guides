@@ -1,27 +1,16 @@
-# Run Docker commands without sudo
+#### After you use dnf to install docker, here's a neat way to simply never need sudo for docker again.
 
-##### 1. Add the `docker` group if it doesn't already exist
+###### First off make sure your service manager is configured to account for Docker (I use Fedora so mine is systemctl)
 
-```console
-$ sudo groupadd docker
 ```
-
-##### 2. Add the connected user `$USER` to the docker group
-
-Optionally change the username to match your preferred user.
-
-```console
-$ sudo gpasswd -a $USER docker
+sudo systemctl enable docker
 ```
+###### Now for the privileges
 
-##### 3. Restart the `docker` daemon
+Simply add a docker group, add yourself to it and restart docker service. Then you need to log off and back on for privileges to flush, or simply use the newgrp cmd as below. Commands were provided by [FedoraProject](https://developer.fedoraproject.org/tools/docker/docker-installation.html)
 
+###### Run Docker commands without sudo
 ```console
-$ sudo service docker restart
-```
-
-If you are on Ubuntu 14.04-15.10, use `docker.io` instead:
-
-```console
-$ sudo service docker.io restart
+$ sudo groupadd docker && sudo gpasswd -a ${USER} docker && sudo systemctl restart docker
+$ newgrp docker
 ```
