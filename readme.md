@@ -7,6 +7,7 @@
 
 - [Install npm packages globally without sudo](npm-global-without-sudo.md) *(Linux Fedora)*
 - [Run Docker commands without sudo](docker-without-sudo.md) *(Linux Fedora)*
+- [Setup a local MariaDB on docker](setup-local-mysql-db.md) *(Linux and MacOS)*
 
 
 ## Thanks to these original authors
