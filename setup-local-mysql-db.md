@@ -12,7 +12,7 @@ mysql -host=172.17.0.1 -uroot -p
 
 ### Mysql commands to change user ###
 ```mysql
-CREATE SCHEMA DBNAME;
+CREATE SCHEMA DBNAME CHARSET 'utf8' COLLATE 'utf8_general_ci';
 GRANT ALL PRIVILEGES ON dbname.* TO 'username'@'%' IDENTIFIED BY 'password';
 FLUSH PRIVILEGES;
 ```
