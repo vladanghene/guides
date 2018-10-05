@@ -16,3 +16,14 @@ CREATE SCHEMA DBNAME CHARSET 'utf8' COLLATE 'utf8_general_ci';
 GRANT ALL PRIVILEGES ON dbname.* TO 'username'@'%' IDENTIFIED BY 'password';
 FLUSH PRIVILEGES;
 ```
+
+### Mysql command to import database from sql ###
+Try:
+```mysql
+mysql -u username -p database_name < file.sql
+```
+Check MySQL Options.
+
+Note-1: It is better to use the full path of the SQL file file.sql.
+
+Note-2: Use -R and --triggers to keep the routines and triggers of original database. They are not copied by default.
