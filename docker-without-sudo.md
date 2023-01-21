@@ -43,3 +43,28 @@ sudo usermod -aG docker username
 The rest of this article assumes you are running the docker command as a user in the docker group. If you choose not to, please prepend the commands with sudo.
 
 From this digitalocean [guide on docker](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-22-04).
+
+---
+##### Installing docker-compose latest official stable version
+
+First, go check their [github](https://github.com/docker/compose) and on the right side you'll see Latest "v2.15.1" (at the time of this commit).
+Then declare a var in your bash:
+```console
+dcver=
+```
+Then simply run this curl to get it:
+```console
+sudo curl -L "https://github.com/docker/compose/releases/download/${dcver}/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+```
+And last but not least, make it executable:
+```console
+sudo chmod +x /usr/local/bin/docker-compose
+```
+Now you can check if it's running smoothly:
+```console
+docker-compose --version
+```
+
+Fron this digitalocean [guide on installing docker-compose](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-compose-on-ubuntu-20-04)
+
+
