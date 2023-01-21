@@ -34,10 +34,12 @@ groups
 ```
 Output
 ```console
-sammy sudo docker
+seinfeld sudo docker
 ```
 If you need to add a user to the docker group that you’re not logged in as, declare that username explicitly using:
 ```console
 sudo usermod -aG docker username
 ```
 The rest of this article assumes you are running the docker command as a user in the docker group. If you choose not to, please prepend the commands with sudo.
+
+From this digitalocean [guide on docker](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-22-04).
